@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title> test form </title>
+    </head>
+    <body>
+        <h1> Course Registration form</h1>
+        <form method="post" target="_blank" action="#"> 
+            <!--represents the current URL, effectively causing the form to submit to the same URL it is on. -->
+            <fieldset>
+                <legend>User Details</legend>
+                <label for="user-name">Enter your name here:
+                    <input id="user-name" name="user-name" type="text" required /> 
+                </label>
+                <label for="mail-id">Enter ur mail id here: 
+                    <input id="mail-id" name="mail-id" type="email" />  
+                </label>
+                <label for="password">Enter password here: 
+                    <input id="password" name="password " type="password" /> 
+                </label>
+                <label for="age">Enter age here: 
+                    <input id="age" name="age" type="age" min="15" max="30"/> 
+                </label>
+                <label for="profile-picture">Submit your picture here: 
+                    <input id="profile-picture" name="profile-picture" type="file" />
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Course Details</legend>
+                <label for="stream">Stream: 
+                    <input id="stream" name="stream" type="text" /> 
+                </label>
+                <label for="course">Course name: 
+                    <input id="course" name="course" type="text" /> 
+                </label>
+                <label for="trainer">Trainer name:
+                    <select id="trainer" name="trainer">
+                        <option value="">Select your trainer</option>
+                        <optgroup label="Artificial Intelligence">
+                            <option value="jyothi">Dr. Jyothi</option>
+                            <option value="Iyengar">Dr. srila Iyengar</option>
+                        </optgroup>
+                        <optgroup label="NLP">
+                            <option value="chopra">Dr. Vinay Chopra</option>
+                            <option value="Reddy">Dr. Arjun Reddy</option>
+                        </optgroup>  
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="expectations">Tell us what you expect from this course :)
+                    <textarea id="expectations" name="expectations" rows="3" cols="30" placeholder="I am excited to..."></textarea>
+                </label>
+            </fieldset>
+            <label for="t&c" >
+                <input id="t&c" name="t&c" type="checkbox" required> I accept all the <a href="t&c link">terms and conditions</a>
+            </label>
+            <input type="submit" value = "Submit" />
+        </form>
+    </body>
+</html>
