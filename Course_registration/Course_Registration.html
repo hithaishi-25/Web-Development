@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <title> test form </title>
-        <link rel="stylesheet" href="Course_Registration.css"
+        <link rel="stylesheet" href="Course_Registration.css">
     </head>
     <body>
-        <h1> Course Registration form</h1>
+        <h1> Course Registration Form</h1>
         <form method="post" target="_blank" action="#"> 
             <!--represents the current URL, effectively causing the form to submit to the same URL it is on. -->
             <fieldset>
@@ -24,7 +24,7 @@
                     <input id="age" name="age" type="age" min="15" max="30"/> 
                 </label>
                 <label for="profile-picture">Submit your picture here: 
-                    <input id="profile-picture" name="profile-picture" type="file" />
+                    <input id="profile-picture" name="profile-picture" type="file" required/>
                 </label>
             </fieldset>
             <fieldset>
@@ -55,7 +55,7 @@
                 </label>
             </fieldset>
             <label for="t&c" >
-                <input id="t&c" name="t&c" type="checkbox" required> I accept all the <a href="t&c link">terms and conditions</a>
+                <input class="inline" id="t&c" name="t&c" type="checkbox" required> I accept all the <a href="t&c link">terms and conditions</a>
             </label>
             <input type="submit" value = "Submit" />
         </form>
