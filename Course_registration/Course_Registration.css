@@ -23,6 +23,7 @@ h1{
     text-align: center;
     background: linear-gradient(to top, rgba(255, 255, 255, 1),  rgba(255, 255, 255, 0));
     -webkit-background-clip: text; /* For Webkit browsers (Chrome, Safari) */
+    background-clip:text;
     color: transparent; /* Make the text transparent to show the background gradient */
     font-size: 24px; /* Set font size */
     font-weight: bold; /* Set font weight if needed */
